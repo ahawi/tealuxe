@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Tealuxe</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__inner container">
+        <div class="header__logo-menu">
+          <a href="/" class="header__logo logo">
+            <img
+              src="./images/logo.svg"
+              alt="Tealuxe"
+              class="logo__image"
+              width="73"
+              height="105"
+              loading="lazy"
+            />
+          </a>
+          <nav class="header__menu hidden-mobile">
+            <ul class="header__menu-list">
+              <li class="header__menu-item">
+                <a href="/" class="header__menu-link">Black</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="/" class="header__menu-link">Green</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="/" class="header__menu-link">White</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="/" class="header__menu-link">Oolong</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="/" class="header__menu-link">Pu-erh</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <ul class="header__actions">
+          <li class="header__actions-item">
+            <a href="/" class="header__actions-link">
+              <img src="images/icons/cart.svg" alt="" width="20" height="22" />
+            </a>
+          </li>
+          <li class="header__actions-item">
+            <a href="/" class="header__actions-link">
+              <img src="images/icons/user.svg" alt="" width="18" height="22" />
+            </a>
+          </li>
+          <li class="header__actions-item search">
+            <a href="/" class="header__actions-link search">
+              <img
+                src="images/icons/search.svg"
+                alt=""
+                width="22"
+                height="22"
+              />
+            </a>
+          </li>
+        </ul>
+        <button
+          class="header__burger-button burger-button visible-mobile"
+          type="button"
+          onclick="mobileOverlay.showModal()"
+        ></button>
+        <span class="visually-hidden">Open navigation menu</span>
+      </div>
+    </header>
+
+    <main class="content">
+      <section class="section">
+        <div class="hero">
+          <div class="hero__wrapper">
+            <div class="hero__body container">
+              <h1 class="hero__title">
+                A cup of tea is a moment of calm in the chaos of life
+              </h1>
+              <div class="hero__description">
+                <p>
+                  Wide selection of high-quality teas from all over the world,
+                  carefully curated by tea experts.
+                </p>
+              </div>
+            </div>
+          </div>
+          <blockquote class="hero__blockquote container">
+            "Tea is not just a drink, it's a way of life and a way to connect
+            with our loved ones."
+          </blockquote>
+        </div>
+      </section>
+
+      <section class="section container">
+        <header class="section__header">
+          <h2 class="section__title">Explore our Collections</h2>
+        </header>
+        <div class="section__body">
+          <div class="tea-types">
+            <ul class="tea-types__list grid grid--5">
+              <li class="tea-types__item">
+                <img
+                  class="tea-types__image"
+                  src="./images/tea-types/black.jpeg"
+                  alt=""
+                  width="208"
+                  height="208"
+                />
+                <h3 class="tea-types__item-title">Black</h3>
+              </li>
+
+              <li class="tea-types__item">
+                <img
+                  class="tea-types__image"
+                  src="./images/tea-types/green.jpeg"
+                  alt=""
+                  width="208"
+                  height="208"
+                />
+                <h3 class="teatypes__item-title">Green</h3>
+              </li>
+
+              <li class="tea-types__item">
+                <img
+                  class="tea-types__image"
+                  src="./images/tea-types/white.jpeg"
+                  alt=""
+                  width="208"
+                  height="208"
+                />
+                <h3 class="teatypes__item-title">White</h3>
+              </li>
+
+              <li class="tea-types__item">
+                <img
+                  class="tea-types__image"
+                  src="./images/tea-types/oolong.jpeg"
+                  alt=""
+                  width="208"
+                  height="208"
+                />
+                <h3 class="teatypes__item-title">Oolong</h3>
+              </li>
+
+              <li class="tea-types__item">
+                <img
+                  class="tea-types__image"
+                  src="./images/tea-types/pu-erh.jpeg"
+                  alt=""
+                  width="208"
+                  height="208"
+                />
+                <h3 class="teatypes__item-title">Pu-erh</h3>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section__header">
+          <h2 class="section__title section__title-clients">
+            What our Clients say
+          </h2>
+        </div>
+        <div class="section__body container">
+          <div class="reviews">
+            <ul class="reviews__list">
+              <li class="reviews__item">
+                <div class="reviews__item-description">
+                  <p>
+                    "As a tea enthusiast, I have tried teas from all over the
+                    world, but this tea store truly stands out. Their teas are
+                    of the highest quality and the variety is impressive. This
+                    is definitely a tea store that every tea lover should
+                    visit."
+                  </p>
+                </div>
+                <div class="reviews__item-sign">Alice</div>
+              </li>
+
+              <li class="reviews__item hidden-mobile">
+                <div class="reviews__item-description">
+                  <p>
+                    "This tea store is my go-to for all my tea needs. Their
+                    selection is unbeatable and the quality of their teas is
+                    exceptional."
+                  </p>
+                </div>
+                <div class="reviews__item-sign">Mad-Hatter</div>
+              </li>
+
+              <li class="reviews__item hidden-mobile">
+                <div class="reviews__item-description">
+                  <p>
+                    "If you're a tea lover, you must visit this tea store. The
+                    selection is vast and the quality is outstanding. I
+                    guarantee you won't be disappointed."
+                  </p>
+                </div>
+                <div class="reviews__item-sign">Dormouse</div>
+              </li>
+
+              <li class="reviews__item hidden-desktop">
+                <div class="reviews__item-description">
+                  <p>
+                    "I am not a big tea drinker, but this tea store has
+                    converted me. I highly recommend this tea store to anyone
+                    looking for a high-quality tea experience."
+                  </p>
+                </div>
+                <div class="reviews__item-sign">March Hare</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section__header">
+          <h2 class="section__title">Our Tea Blog</h2>
+        </div>
+        <div class="section__body container container-mobile">
+          <div class="articles">
+            <ul class="articles__list grid grid--4">
+              <li class="articles__item">
+                <img
+                  src="./images/articles/1.jpeg"
+                  alt=""
+                  class="articles__image"
+                  width="270"
+                  height="180"
+                />
+                <div class="articles__description">
+                  <h3 class="articles__title">
+                    Tea Time Travels: Funny Moments from Around the World
+                  </h3>
+                  <div class="articles__sign">by Robinson Crusoe</div>
+                  <a href="/" class="articles__link">Read</a>
+                </div>
+              </li>
+
+              <li class="articles__item">
+                <img
+                  src="./images/articles/2.jpeg"
+                  alt=""
+                  class="articles__image"
+                  width="270"
+                  height="180"
+                />
+                <div class="articles__description">
+                  <h3 class="articles__title">
+                    The Role of Tea in Mental Health
+                  </h3>
+                  <div class="articles__sign">by Joker</div>
+                  <a href="/" class="articles__link">Read</a>
+                </div>
+              </li>
+
+              <li class="articles__item hidden-mobile-s">
+                <img
+                  src="./images/articles/3.jpeg"
+                  alt=""
+                  class="articles__image"
+                  width="270"
+                  height="180"
+                />
+                <div class="articles__description">
+                  <h3 class="articles__title">
+                    Tea-rific Tales: Hilarious Stories from Tea Lovers
+                  </h3>
+                  <div class="articles__sign">by Casper the Friendly Ghost</div>
+                  <a href="/" class="articles__link">Read</a>
+                </div>
+              </li>
+
+              <li class="articles__item hidden-mobile-s">
+                <img
+                  src="./images/articles/4.jpeg"
+                  alt=""
+                  class="articles__image"
+                  width="270"
+                  height="180"
+                />
+                <div class="articles__description">
+                  <h3 class="articles__title">
+                    Tea and Caffeine: Effects on the Brain and Behavior
+                  </h3>
+                  <div class="articles__sign">by Author Authorius</div>
+                  <a href="/" class="articles__link">Read</a>
+                </div>
+              </li>
+            </ul>
+
+            <button class="articles__button button" type="button">
+              View all
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section__header-newsletter container">
+          <h2 class="section__title-clients newsletter__title">
+            Want to know more?
+          </h2>
+        </div>
+        <div class="section__body container">
+          <div class="newsletter">
+            <div class="newsletter__description">
+              <p>
+                Join our mailing list and stay up-to-date with the latest news,
+                promotions, and exclusive offers from our tea store. Be the
+                first to know about new tea arrivals, seasonal blends, and
+                special discounts. Don't miss out on the tea-rrific perks - sign
+                up today!
+              </p>
+            </div>
+            <form class="newsletter__form">
+              <div class="newsletter__body">
+                <div class="newsletter__field field">
+                  <label class="visually-hidden" for="email">Email</label>
+                  <input
+                    class="field__input"
+                    id="email"
+                    name="email"
+                    placeholder="name@email.com"
+                    type="email"
+                    required
+                  />
+                  <button class="newsletter__button button" type="submit">
+                    Join
+                  </button>
+                </div>
+                <div class="newsletter__agreement">
+                  <input
+                    class="newsletter__agreement-input"
+                    id="agreement"
+                    type="checkbox"
+                  />
+                  <label
+                    for="agreement"
+                    class="newsletter__agreement-description"
+                  >
+                    <p>
+                      We take your privacy seriously and are committed to
+                      protecting your personal information. By subscribing to
+                      our mailing list, you are consenting to receive periodic
+                      emails from us about our products, promotions, and other
+                      tea-related information.
+                    </p></label
+                  >
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section__header">
+          <h2 class="section__title">We Prioritise</h2>
+        </div>
+        <div class="section__body container">
+          <div class="priorities">
+            <ul class="priorities__list grid grid--p">
+              <li class="priorities__item">
+                <h3 class="priorities__title">Single garden teas</h3>
+                <p class="priorities__description">Complete transparency</p>
+                <img
+                  src="/images/priorities/1.svg"
+                  alt=""
+                  class="priorities__image"
+                  width="60"
+                  height="60"
+                />
+              </li>
+
+              <li class="priorities__item">
+                <h3 class="priorities__title">Only Loose leaf tea</h3>
+                <p class="priorities__description">Best Drinking Experience</p>
+                <img
+                  src="/images/priorities/2.svg"
+                  alt=""
+                  class="priorities__image"
+                  width="60"
+                  height="60"
+                />
+              </li>
+
+              <li class="priorities__item">
+                <h3 class="priorities__title">Customer support</h3>
+                <p class="priorities__description">
+                  No bots, no automated replies
+                </p>
+                <img
+                  src="/images/priorities/3.svg"
+                  alt=""
+                  class="priorities__image"
+                  width="60"
+                  height="60"
+                />
+              </li>
+
+              <li class="priorities__item">
+                <h3 class="priorities__title">Fast shipping</h3>
+                <p class="priorities__description">
+                  Save, Convenient, Reliable
+                </p>
+                <img
+                  src="/images/priorities/4.svg"
+                  alt=""
+                  class="priorities__image"
+                  width="60"
+                  height="60"
+                />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__inner container">
+        <div class="footer__body">
+          <div class="footer__products-company">
+            <div class="footer__products">
+              <h3 class="footer__title">Products</h3>
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a href="/" class="footer__products-link">Black tea</a>
+                </li>
+
+                <li class="footer__item">
+                  <a href="/" class="footer__products-link">Green tea</a>
+                </li>
+
+                <li class="footer__item">
+                  <a href="/" class="footer__products-link">White tea</a>
+                </li>
+
+                <li class="footer__item">
+                  <a href="/" class="footer__products-link">Oolong tea</a>
+                </li>
+
+                <li class="footer__item">
+                  <a href="/" class="footer__products-link">Pu-erh tea</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__company">
+              <h3 class="footer__title">Company</h3>
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a href="/" class="footer__company-link">About Us</a>
+                </li>
+
+                <li class="footer__item">
+                  <a href="/" class="footer__company-link">Contact Us</a>
+                </li>
+
+                <li class="footer__item">
+                  <a href="/" class="footer__company-link">Our Blog</a>
+                </li>
+
+                <li class="footer__item">
+                  <a href="/" class="footer__company-link">FAQ</a>
+                </li>
+
+                <li class="footer__item">
+                  <a href="/" class="footer__company-link"
+                    >Shipping &amp Delivery</a
+                  >
+                </li>
+
+                <li class="footer__item">
+                  <a href="/" class="footer__company-link">Refund policy</a>
+                </li>
+
+                <li class="footer__item">
+                  <a href="/" class="footer__company-link">Terms of Service</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__blockquote-contacts">
+            <blockquote class="footer__blockquote">
+              <p>
+                “Tea is a journey. It can take you to new places and open your
+                mind to new experiences. Let every sip transport you to a world
+                of wonder and possibility”
+              </p>
+              <cite class="footer__cite"
+                >Dragomir Teodorescu, 
+                Tealuxe owner</cite
+              >
+            </blockquote>
+
+            <div class="footer__contacts">
+              <h3 class="footer__title">Stay In Touch</h3>
+              <div class="footer__contacts-description">
+                <p>
+                  Please feel free to contact us via the email of phone. We
+                  would be happy to hear from you!
+                </p>
+              </div>
+              <div class="footer__contacts-body">
+                <img
+                  src="./images/logo.svg"
+                  alt="Logo"
+                  class="footer__contacts-logo"
+                  width="57"
+                  height="91"
+                />
+                <address class="footer__addresses">
+                  <div class="footer__contacts-phone">
+                    <div class="footer__contacts-image">
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20.8052 20.8052"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                      >
+                        <defs />
+                        <path
+                          id="icon"
+                          d="M15.66 20.72C13.64 20.21 9.51 18.79 5.76 15.04C2.01 11.29 0.58 7.15 0.08 5.13C-0.22 3.97 0.31 2.85 1.2 2.22L3.53 0.55C4.89 -0.42 6.78 -0.09 7.74 1.29L9.2 3.4C9.82 4.3 9.61 5.54 8.72 6.17L7.55 7.01C7.73 7.68 8.28 9.07 10 10.79C11.72 12.52 13.11 13.07 13.79 13.24L14.62 12.08C15.26 11.19 16.49 10.97 17.39 11.59L19.51 13.06C20.88 14.01 21.21 15.91 20.24 17.27L18.58 19.6C17.94 20.49 16.82 21.01 15.66 20.72ZM7.17 13.62C10.58 17.03 14.34 18.33 16.15 18.78C16.41 18.85 16.73 18.74 16.95 18.44L18.61 16.11C18.94 15.65 18.83 15.02 18.37 14.7L16.25 13.24L15.36 14.49C14.99 15.01 14.31 15.41 13.52 15.24C12.54 15.02 10.72 14.34 8.59 12.21C6.45 10.07 5.77 8.25 5.56 7.27C5.39 6.48 5.79 5.81 6.3 5.44L7.56 4.54L6.09 2.43C5.77 1.97 5.14 1.86 4.69 2.18L2.36 3.84C2.05 4.06 1.95 4.38 2.02 4.65C2.47 6.45 3.76 10.21 7.17 13.62Z"
+                          fill="#151618"
+                          fill-opacity="1.000000"
+                          fill-rule="evenodd"
+                        />
+                      </svg>
+                    </div>
+                    <p>
+                      <a href="tel:370680123456">+370 680 123456</a>
+                    </p>
+                  </div>
+                  <div class="footer__contacts-email">
+                    <div class="footer__contacts-image">
+                      <svg
+                        width="22"
+                        height="16"
+                        viewBox="0 0 22 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                      >
+                        <defs />
+                        <path
+                          id="icon"
+                          d="M19 0C20.65 0 22 1.34 22 3L22 13C22 14.65 20.65 16 19 16L3 16C1.34 16 0 14.65 0 13L0 3C0 1.34 1.34 0 3 0L19 0ZM18.25 2L3.74 2L10.38 7.23C10.74 7.52 11.25 7.52 11.61 7.23L18.25 2ZM2 3.16L2 13C2 13.55 2.44 14 3 14L19 14C19.55 14 20 13.55 20 13L20 3.16L12.85 8.8C11.76 9.66 10.23 9.66 9.14 8.8L2 3.16Z"
+                          fill="#151618"
+                          fill-opacity="1.000000"
+                          fill-rule="evenodd"
+                        />
+                      </svg>
+                    </div>
+                    <p>
+                      <a href="mailto:info@tealuxe.com">info@tealuxe.com</a>
+                    </p>
+                  </div>
+                </address>
+              </div>
+
+              <div class="footer__soc1als soc1als">
+                <ul class="soc1als__list">
+                  <li class="soc1als__item">
+                    <a href="/" class="soc1als__link">
+                      <span class="visually-hidden">Facebook</span>
+                      <svg
+                        width="22"
+                        height="22"
+                        viewBox="0 0 22 22"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          id="icon"
+                          d="M19 0C20.65 0 22 1.34 22 3L22 19C22 20.65 20.65 22 19 22L3 22C1.34 22 0 20.65 0 19L0 3C0 1.34 1.34 0 3 0L19 0ZM19 2C19.55 2 20 2.44 20 3L20 19C20 19.55 19.55 20 19 20L14 20L14 13L16.07 13C16.5 13 16.88 12.72 17.02 12.31L17.46 10.98C17.62 10.5 17.26 10 16.75 10L14 10L14 8C14 7.5 14.5 7 15 7L17 7C17.55 7 18 6.55 18 6L18 5.31C18 4.99 17.79 4.7 17.48 4.61C16.17 4.27 15 4.27 15 4.27C12.5 4.27 11 6 11 7.5L11 10L9 10C8.44 10 8 10.44 8 11L8 12C8 12.55 8.44 13 9 13L11 13L11 20L3 20C2.44 20 2 19.55 2 19L2 3C2 2.44 2.44 2 3 2L19 2Z"
+                          fill="#0F0F0F"
+                          fill-opacity="1.000000"
+                          fill-rule="evenodd"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="soc1als__item">
+                    <a href="/" class="soc1als__link">
+                      <span class="visually-hidden">Youtube</span>
+                      <svg
+                        width="24.000000"
+                        height="18.000000"
+                        viewBox="0 0 24 18"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                      >
+                        <rect
+                          id="icon"
+                          width="24.000000"
+                          height="18.000000"
+                          fill="#FFFFFF"
+                          fill-opacity="0"
+                        />
+                        <path
+                          id="icon"
+                          d="M0.95 2.06C0 3.37 0 5.25 0 9C0 12.74 0 14.62 0.95 15.93C1.26 16.36 1.63 16.73 2.06 17.04C3.37 18 5.25 18 9 18L15 18C18.74 18 20.62 18 21.93 17.04C22.36 16.73 22.73 16.36 23.04 15.93C24 14.62 24 12.74 24 9C24 5.25 24 3.37 23.04 2.06C22.73 1.63 22.36 1.26 21.93 0.95C20.62 0 18.74 0 15 0L9 0C5.25 0 3.37 0 2.06 0.95C1.63 1.26 1.26 1.63 0.95 2.06ZM15 2L9 2C7.08 2 5.8 2 4.83 2.1C3.9 2.2 3.49 2.38 3.23 2.57C2.98 2.75 2.75 2.98 2.57 3.23C2.38 3.49 2.2 3.9 2.1 4.83C2 5.8 2 7.08 2 9C2 10.91 2 12.19 2.1 13.16C2.2 14.09 2.38 14.5 2.57 14.76C2.75 15.01 2.98 15.24 3.23 15.42C3.49 15.61 3.9 15.79 4.83 15.89C5.8 15.99 7.08 16 9 16L15 16C16.91 16 18.19 15.99 19.16 15.89C20.09 15.79 20.5 15.61 20.76 15.42C21.01 15.24 21.24 15.01 21.42 14.76C21.61 14.5 21.79 14.09 21.89 13.16C21.99 12.19 22 10.91 22 9C22 7.08 21.99 5.8 21.89 4.83C21.79 3.9 21.61 3.49 21.42 3.23C21.24 2.98 21.01 2.75 20.76 2.57C20.5 2.38 20.09 2.2 19.16 2.1C18.19 2 16.91 2 15 2ZM8.49 4.13C8.8 3.95 9.18 3.95 9.49 4.13L16.49 8.13C16.8 8.3 17 8.64 17 9C17 9.35 16.8 9.69 16.49 9.86L9.49 13.86C9.18 14.04 8.8 14.04 8.49 13.86C8.18 13.68 8 13.35 8 13L8 5C8 4.64 8.18 4.31 8.49 4.13ZM10 11.27L13.98 9L10 6.72L10 11.27Z"
+                          fill="#0F0F0F"
+                          fill-opacity="1.000000"
+                          fill-rule="evenodd"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="soc1als__item">
+                    <a href="/" class="soc1als__link">
+                      <span class="visually-hidden">Instagram</span>
+                      <svg
+                        width="22.000000"
+                        height="22.000000"
+                        viewBox="0 0 22 22"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                      >
+                        <rect
+                          id="icon"
+                          width="22.000000"
+                          height="22.000000"
+                          fill="#FFFFFF"
+                          fill-opacity="0"
+                        />
+                        <path
+                          id="icon"
+                          d="M0 9.6C0 6.23 0 4.55 0.65 3.27C1.22 2.14 2.14 1.22 3.27 0.65C4.55 0 6.23 0 9.6 0L12.39 0C15.76 0 17.44 0 18.72 0.65C19.85 1.22 20.77 2.14 21.34 3.27C22 4.55 22 6.23 22 9.6L22 12.39C22 15.76 22 17.44 21.34 18.72C20.77 19.85 19.85 20.77 18.72 21.34C17.44 22 15.76 22 12.39 22L9.6 22C6.23 22 4.55 22 3.27 21.34C2.14 20.77 1.22 19.85 0.65 18.72C0 17.44 0 15.76 0 12.39L0 9.6ZM9.6 2L12.39 2C14.11 2 15.27 2 16.17 2.07C17.05 2.14 17.5 2.27 17.81 2.43C18.56 2.81 19.18 3.43 19.56 4.18C19.72 4.49 19.85 4.94 19.92 5.82C19.99 6.72 20 7.88 20 9.6L20 12.39C20 14.11 19.99 15.27 19.92 16.17C19.85 17.05 19.72 17.5 19.56 17.81C19.18 18.56 18.56 19.18 17.81 19.56C17.5 19.72 17.05 19.85 16.17 19.92C15.27 19.99 14.11 20 12.39 20L9.6 20C7.88 20 6.72 19.99 5.82 19.92C4.94 19.85 4.49 19.72 4.18 19.56C3.43 19.18 2.81 18.56 2.43 17.81C2.27 17.5 2.14 17.05 2.07 16.17C2 15.27 2 14.11 2 12.39L2 9.6C2 7.88 2 6.72 2.07 5.82C2.14 4.94 2.27 4.49 2.43 4.18C2.81 3.43 3.43 2.81 4.18 2.43C4.49 2.27 4.94 2.14 5.82 2.07C6.72 2 7.88 2 9.6 2ZM17 4C16.44 4 16 4.44 16 5C16 5.55 16.44 6 17 6C17.55 6 18 5.55 18 5C18 4.44 17.55 4 17 4ZM11 17C14.31 17 17 14.31 17 11C17 7.68 14.31 5 11 5C7.68 5 5 7.68 5 11C5 14.31 7.68 17 11 17ZM11 15C13.2 15 15 13.2 15 11C15 8.79 13.2 7 11 7C8.79 7 7 8.79 7 11C7 13.2 8.79 15 11 15Z"
+                          fill="#0F0F0F"
+                          fill-opacity="1.000000"
+                          fill-rule="evenodd"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="soc1als__item">
+                    <a href="/" class="soc1als__link">
+                      <span class="visually-hidden">Twitter</span>
+                      <svg
+                        width="22.000000"
+                        height="18.000000"
+                        viewBox="0 0 22 18"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                      >
+                        <rect
+                          id="icon"
+                          width="22.000069"
+                          height="18.000000"
+                          fill="#FFFFFF"
+                          fill-opacity="0"
+                        />
+                        <path
+                          id="icon"
+                          d="M18.78 1.2C19.13 1.12 19.37 1.04 19.57 0.96C19.85 0.84 20.08 0.7 20.44 0.47C20.75 0.28 21.14 0.26 21.47 0.43C21.79 0.6 22 0.92 22 1.28C22 2.32 21.86 3.17 21.55 3.93C21.29 4.56 20.92 5.07 20.48 5.54C20.29 8.78 19.32 11.33 17.83 13.26C16.29 15.26 14.23 16.54 12.07 17.26C9.91 17.97 7.63 18.13 5.59 17.89C3.56 17.65 1.69 17 0.38 16.02C0.02 15.75 -0.1 15.29 0.07 14.88C0.25 14.48 0.69 14.24 1.14 14.31C2.42 14.48 3.66 14.2 4.68 13.8C4.48 13.69 4.29 13.58 4.11 13.46C3.19 12.84 2.44 12 2.1 11.35C1.96 11.08 1.96 10.77 2.1 10.5C2.17 10.36 2.27 10.24 2.4 10.15C1.04 9.07 0.5 7.58 0.5 6.58C0.5 6.28 0.64 6 0.88 5.82C0.98 5.74 1.1 5.69 1.22 5.65C1.12 5.37 1.04 5.08 0.98 4.8C0.71 3.56 0.74 2.16 1.03 1.04C1.12 0.66 1.45 0.38 1.86 0.32C2.26 0.27 2.66 0.45 2.86 0.79C3.94 2.6 5.93 3.7 7.78 4.35C8.65 4.66 9.45 4.85 10.05 4.97C10.18 3.79 10.53 2.82 11.05 2.05C11.74 1.04 12.7 0.43 13.74 0.16C15.52 -0.3 17.5 0.23 18.78 1.2ZM9.74 6.88C9.06 6.75 8.12 6.52 7.09 6.16C5.73 5.68 4.16 4.94 2.84 3.78C2.86 3.99 2.89 4.2 2.94 4.41C3.16 5.44 3.57 6.02 3.94 6.2C4.4 6.42 4.61 6.94 4.43 7.4C4.19 8.02 3.56 8.07 2.99 7.94C3.45 8.6 4.28 9.27 5.66 9.49C6.14 9.56 6.49 9.96 6.5 10.42C6.5 10.89 6.16 11.29 5.69 11.38L4.82 11.55C4.95 11.66 5.1 11.77 5.25 11.88C5.95 12.34 6.65 12.54 7.25 12.4C7.7 12.29 8.18 12.49 8.39 12.89C8.6 13.3 8.49 13.78 8.14 14.07C7.49 14.59 6.74 15 5.99 15.35C5.63 15.51 5.24 15.67 4.81 15.81C5.14 15.88 5.48 15.93 5.84 15.98C7.61 16.19 9.58 16.04 11.42 15.43C13.26 14.82 14.95 13.75 16.22 12.11C17.49 10.46 18.38 8.19 18.5 5.1C18.51 4.86 18.61 4.62 18.79 4.45C19.24 4.02 19.61 3.52 19.79 2.93C19.47 3.03 19.11 3.11 18.68 3.19C18.36 3.25 18.02 3.15 17.79 2.92C17.02 2.19 15.51 1.7 14.26 2.03C13.66 2.18 13.13 2.51 12.72 3.11C12.31 3.72 12 4.66 12 6.1C12 6.37 11.88 6.63 11.67 6.81C11.17 7.25 10.33 6.99 9.74 6.88Z"
+                          fill="#0F0F0F"
+                          fill-opacity="1.000000"
+                          fill-rule="evenodd"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer__extra">
+          <p class="footer__copyright">
+            © Tealuxe, <time datetime="2023">2023</time>
+          </p>
+          <div class="footer__payment">
+            <ul class="footer__payment-list">
+              <li class="footer__payment-item">
+                <span class="visually-hidden">Mastercard</span>
+                <img
+                  width="26"
+                  height="20"
+                  src="./images/payments/mastercard.png"
+                  alt=""
+                />
+              </li>
+              <li class="footer__payment-item">
+                <span class="visually-hidden">Visa</span>
+                <img
+                  width="31"
+                  height="10"
+                  src="./images/payments/visa.png"
+                  alt=""
+                />
+              </li>
+              <li class="footer__payment-item">
+                <span class="visually-hidden">Google pay</span>
+                <img
+                  width="29"
+                  height="12"
+                  src="./images/payments/google-pay.png"
+                  alt=""
+                />
+              </li>
+              <li class="footer__payment-item">
+                <span class="visually-hidden">PayPal</span>
+                <img
+                  width="10"
+                  height="12"
+                  src="./images/payments/paypal.png"
+                  alt=""
+                />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <dialog class="mobile-overlay visible-mobile" id="mobileOverlay">
+      <form class="mobile-overlay__close-button-wrapper" method="dialog">
+        <button class="mobile-overlay__close-button cross-button" type="submit">
+          <span class="visually-hidden">Close navigation menu</span>
+        </button>
+      </form>
+      <div class="mobile-overlay__body">
+        <div class="mobile-overlay__tea-name">
+          <ul class="mobile-overlay__tea-name-list">
+            <li class="mobile-overlay__tea-name-item">
+              <a href="/" class="mobile-overlay__tea-name-link">Black</a>
+            </li>
+            <li class="mobile-overlay__tea-name-item">
+              <a href="/" class="mobile-overlay__tea-name-link">Green</a>
+            </li>
+            <li class="mobile-overlay__tea-name-item">
+              <a href="/" class="mobile-overlay__tea-name-link">White</a>
+            </li>
+            <li class="mobile-overlay__tea-name-item">
+              <a href="/" class="mobile-overlay__tea-name-link">Oolong</a>
+            </li>
+            <li class="mobile-overlay__tea-name-item">
+              <a href="/" class="mobile-overlay__tea-name-link">Pu-erh</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="mobile-overlay__info">
+          <ul class="mobile-overlay__info-list">
+            <li class="mobile-overlay__info-item">
+              <a href="/" class="mobile-overlay__info-link">Contact Us</a>
+            </li>
+            <li class="mobile-overlay__info-item">
+              <a href="/" class="mobile-overlay__info-link">Our Blog</a>
+            </li>
+            <li class="mobile-overlay__info-item">
+              <a href="/" class="mobile-overlay__info-link"
+                >Shipping and Delivery</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="mobile-overlay__actions">
+          <ul class="mobile-overlay__actions-list">
+            <li class="mobile-overlay__actions-item">
+              <a href="/" class="mobile-overlay__actions-link">
+                <img
+                  src="images/icons/cart.svg"
+                  alt=""
+                  width="20"
+                  height="22"
+                />
+              </a>
+            </li>
+            <li class="mobile-overlay__actions-item">
+              <a href="/" class="mobile-overlay__actions-link">
+                <img
+                  src="images/icons/user.svg"
+                  alt=""
+                  width="18"
+                  height="22"
+                />
+              </a>
+            </li>
+            <li class="mobile-overlay__actions-item">
+              <a href="/" class="mobile-overlay__actions-link">
+                <img
+                  src="images/icons/search.svg"
+                  alt=""
+                  width="22"
+                  height="22"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </dialog>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+.section {
+  margin-bottom: 150px;
+
+  @include desktop {
+    margin-bottom: 120px;
+  }
+
+  @include mobile {
+    margin-bottom: 40px;
+  }
+  
+  &__header {
+    font-family: var(--font-family-alt);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+    // padding-top: 60px;
+
+    @include tablet {
+      margin-bottom: 60px;
+    }
+
+    @include mobile {
+      margin-bottom: 50px;
+      font-size: 24px;
+    }
+
+    &-newsletter {
+      font-family: var(--font-family-alt);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 60px;
+
+      @include mobile {
+        margin-bottom: 30px;
+        font-size: 24px;
+      }
+    }
+  }
+
+  &:nth-child(odd):nth-child(n + 3) {
+    background-color: var(--color-beige-light);
+  }
+
+  &:nth-child(5) {
+    background: url("../../images/tea-bg.png") right top/contain no-repeat;
+
+    @include mobile-xs {
+      background: transparent;
+    }
+  }  
+
+  &__title-clients {
+    padding-top: 60px;
+  }
+}

@@ -1,0 +1,12 @@
+.search {
+  display: flex;
+  margin-left: 40px;
+
+  @include desktop {
+    margin-left: 15px;
+  }
+
+  @include mobile-s {
+    margin-left: auto;
+  }
+}

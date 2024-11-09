@@ -1,0 +1,75 @@
+.mobile-overlay {
+  margin-top: 0;
+  width: 360px;
+  border: none;
+
+  &:modal {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  &::backdrop {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  &__close-button-wrapper {
+    display: flex;
+    justify-content: end;
+  }
+
+  &__tea-name {
+    padding-bottom: 60px;
+    &-list {
+      @include flex-center;
+
+      flex-direction: column;
+      row-gap: 20px;
+    }
+    &-item {
+      font-family: var(--font-family-alt);
+      font-size: 24px;
+    }
+  }
+
+  &__info {
+    padding: 60px 0;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 8%;
+      width: 83%;
+      border-top: 2px solid var(--color-beige-light);
+      content: "";
+    }
+
+    &-list {
+      @include flex-center;
+
+      flex-direction: column;
+      row-gap: 35px;
+    }
+
+    &-item {
+      font-family: var(--font-family-base);
+      font-size: 14px;
+      font-weight: 300;
+    }
+  }
+
+  &__actions {
+    background-color: var(--color-beige-light);
+
+    &-list {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 80px;
+      column-gap: 70px;
+    }
+
+    &-item {
+      flex-shrink: 0;
+    }
+  }
+}

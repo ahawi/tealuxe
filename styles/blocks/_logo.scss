@@ -1,0 +1,17 @@
+.logo {
+  &__image {
+    max-width: 73px;
+    max-height: 105px;
+
+    @include mobile {
+      max-width: 54px;
+      max-height: 77px;
+      margin-left: 70px;
+    }
+
+    @include mobile-s {
+      max-width: 39px;
+      max-height: 56px;
+    }
+  }
+}

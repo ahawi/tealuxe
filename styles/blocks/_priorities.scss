@@ -1,0 +1,21 @@
+.priorities {
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    padding-bottom: 10px;
+  }
+
+  &__description {
+    font-weight: 600;
+    padding-bottom: 40px;
+
+    @include mobile-s {
+      padding-bottom: 30px;
+    }
+  }
+}

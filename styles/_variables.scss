@@ -1,0 +1,20 @@
+:root {
+  --color-dark: #151618;
+  --color-light: #ffffff;
+  --color-accent: #f7f2ea;
+  --color-beige: #b8b58b;
+  --color-beige-light: #F7F2EA;
+  --color-cross-button: #754E29;
+
+  --border: 1px solid var(--color-dark);
+
+  --font-family-base: "Open Sans", sans-serif;
+  --font-family-alt: "Cormorant", sans-serif;
+
+  --container-width: 1200px;
+  --container-padding-x: 10px;
+
+  --button-height: 50px;
+
+  --transition-duration: 0.2s;
+}

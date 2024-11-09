@@ -1,0 +1,41 @@
+.field {
+  &__input {
+    width: 439px;
+    height: var(--button-height);
+    padding-inline: 15px;
+    border: none;
+    border-bottom: 1px solid var(--color-beige);
+    background-color: transparent;
+
+    &::placeholder {
+      color: var(--color-beige);
+      font-weight: 300;
+    }
+
+    &:focus-visible {
+      transition-duration: 0s;
+      border: 1px solid var(--color-beige);
+      outline: none;
+      background-color: var(--color-light);
+    }
+
+    @include hover {
+      background-color: var(--color-light);
+    }
+
+    @include desktop {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    @include mobile {
+      max-width: 324px;
+    }
+
+    @include mobile-s {
+        max-width: 205px;
+    }
+  }
+  
+}

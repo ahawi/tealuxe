@@ -1,0 +1,195 @@
+.footer {
+  background-color: var(--color-beige-light);
+
+  &__inner {
+    @include mobile {
+      display: contents;
+    }
+  }
+
+  &__body {
+    padding: 100px 0;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 40px;
+
+    @include desktop {
+      padding-bottom: 60px;
+    }
+
+    @include tablet {
+      padding-top: 50px;
+    }
+
+    @include mobile {
+      flex-direction: column;
+      row-gap: 50px;
+      padding-bottom: 50px;
+    }
+  }
+
+  &__products-company {
+    display: flex;
+    column-gap: 213px;
+
+    @include desktop {
+      column-gap: 60px;
+    }
+
+    @include mobile {
+      justify-content: space-evenly;
+    }
+  }
+
+  &__products {
+    @include desktop {
+      margin-right: 20px;
+      margin-left: 10px;
+    }
+  }
+
+  &__title {
+    font-family: var(--font-family-alt);
+    font-size: 24px;
+    padding-bottom: 50px;
+
+    @include mobile {
+      padding-bottom: 20px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  &__item {
+    font-size: 16px;
+    font-weight: 300;
+  }
+
+  &__company {
+    white-space: nowrap;
+  }
+
+  &__blockquote {
+    margin-left: 110px;
+    padding-top: 83px;
+    max-width: 270px;
+    font-size: 16px;
+    font-style: italic;
+
+    @include desktop {
+      padding-top: 0;
+      margin-left: 0;
+    }
+
+    @include mobile {
+      max-width: 460px;
+      padding-inline: 10px;
+    }
+  }
+
+  &__cite {
+    display: flex;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    width: 130px;
+
+    @include mobile {
+      width: 300px;
+    }
+  }
+
+  &__contacts {
+    font-size: 13px;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+
+    @include desktop {
+      padding-right: 10px;
+    }
+
+    @include mobile {
+      align-items: center;
+      padding-inline: 10px;
+    }
+
+    &-description {
+      max-width: 270px;
+      padding-bottom: 20px;
+
+      @include mobile {
+        max-width: 460px;
+        text-align: center;
+      }
+    }
+
+    &-body {
+      display: flex;
+      align-items: center;
+      column-gap: 40px;
+      padding-bottom: 20px;
+    }
+
+    &-phone {
+      display: flex;
+      column-gap: 10px;
+    }
+
+    &-email {
+      display: flex;
+      column-gap: 10px;
+    }
+  }
+
+  &__addresses {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+  }
+
+  &__extra {
+    display: flex;
+    column-gap: 180px;
+    padding-bottom: 20px;
+
+    @include desktop {
+      column-gap: 50px;
+    }
+  }
+
+  &__copyright {
+    font-weight: 300;
+    font-size: 16px;
+  }
+
+  &__payment {
+    &-list {
+      display: flex;
+      column-gap: 20px;
+      align-items: center;
+    }
+  }
+
+  &__blockquote-contacts {
+    display: flex;
+    column-gap: 40px;
+
+    @include tablet {
+      flex-direction: column;
+      row-gap: 50px;
+    }
+
+    @include mobile {
+      align-items: center;
+    }
+
+    @include mobile-xs {
+      row-gap: 40px;
+    }
+  }
+}

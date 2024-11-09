@@ -1,0 +1,11 @@
+.button {
+  height: var(--button-height);
+  border: var(--border);
+  width: 150px;
+  font-weight: 300;
+  background-color: transparent;
+
+  @include hover {
+    background-color: var(--color-beige-light);
+  }
+}
