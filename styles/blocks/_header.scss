@@ -70,10 +70,6 @@
       align-items: center;
       height: 35px;
 
-      @include tablet {
-        // font-size: 16px;
-      }
-
       @include hover {
         opacity: 0.8;
         &::after {

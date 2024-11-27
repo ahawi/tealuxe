@@ -1351,6 +1351,16 @@ h4,
     margin-left: 10px;
   }
 }
+@media (hover: hover) {
+  .footer__products-link:hover {
+    opacity: 0.7;
+  }
+}
+@media (hover: none) {
+  .footer__products-link:active {
+    opacity: 0.7;
+  }
+}
 .footer__title {
   font-family: var(--font-family-alt);
   font-size: 24px;
@@ -1372,6 +1382,16 @@ h4,
 }
 .footer__company {
   white-space: nowrap;
+}
+@media (hover: hover) {
+  .footer__company-link:hover {
+    opacity: 0.7;
+  }
+}
+@media (hover: none) {
+  .footer__company-link:active {
+    opacity: 0.7;
+  }
 }
 .footer__blockquote {
   margin-left: 110px;
